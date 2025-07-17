@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Shop Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sweet Shop Management System</h1>
+    <section class="controls">
+      <form id="addForm">
+        <input type="number" id="id" placeholder="ID" required min="1">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="number" id="price" placeholder="Price" required min="0">
+        <input type="number" id="quantity" placeholder="Quantity" required min="0">
+        <button type="submit">Add Sweet</button>
+      </form>
+      <div class="search-sort">
+        <input type="text" id="searchName" placeholder="Search by Name">
+        <input type="text" id="searchCategory" placeholder="Search by Category">
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <button id="searchBtn">Search</button>
+        <button id="resetBtn">Reset</button>
+        <select id="sortSelect">
+          <option value="">Sort By</option>
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="name">Name (A-Z)</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <table id="sweetTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
