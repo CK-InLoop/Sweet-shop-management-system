@@ -26,6 +26,37 @@ class SweetService {
     return this.sweets.filter(s => s.name.toLowerCase().includes(lower));
   }
 
+  searchByCategory(category) {
+    const lower = category.toLowerCase();
+    return this.sweets.filter(s => s.category.toLowerCase() === lower);
+  }
+
+  searchByPriceRange(min, max) {
+    return this.sweets.filter(s => s.price >= min && s.price <= max);
+  }
+
+  sortByPrice(order = 'asc') {
+    const sorted = [...this.sweets].sort((a, b) => a.price - b.price);
+    return order === 'desc' ? sorted.reverse() : sorted;
+  }
+
+  sortByName() {
+    return [...this.sweets].sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  purchaseSweet(id, amount) {
+    const sweet = this.sweets.find(s => s.id === id);
+    if (!sweet) throw new Error('Sweet not found');
+    if (sweet.quantity < amount) throw new Error('Insufficient quantity');
+    sweet.quantity -= amount;
+  }
+
+  restockSweet(id, amount) {
+    const sweet = this.sweets.find(s => s.id === id);
+    if (!sweet) throw new Error('Sweet not found');
+    sweet.quantity += amount;
+  }
+
   getAllSweets() {
     return this.sweets;
   }
