@@ -44,3 +44,8 @@ This project allows you to manage sweets inventory with core functionalities lik
 - Every feature is implemented only after writing the corresponding test.
 - Tests are written using Jest and located in the /tests folder.
 - Test coverage includes positive and negative scenarios.
+
+
+## To run the frontend:
+   - Open frontend/index.html in your browser
+   - Use the buttons to add, search, sort, delete, purchase, or restock sweets
