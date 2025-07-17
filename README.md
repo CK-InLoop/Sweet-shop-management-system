@@ -30,14 +30,14 @@ This project allows you to manage sweets inventory with core functionalities lik
 ## 📦 Setup Instructions
 
 1. **Clone the repository**
-   git clone https://github.com/your-username/sweet-shop-management-system.git
+   - git clone https://github.com/your-username/sweet-shop-management-system.git
    cd sweet-shop-management-system
    
 2. **Initialize the project**
-npm install
+- npm install
 
 4. **Run the test suite**
-npm test
+- npm test
 
 🧪 Test-Driven Development (TDD)
 - This project follows TDD principles:
