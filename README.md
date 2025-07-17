@@ -1,4 +1,4 @@
-# 🍬 Sweet Shop Management System
+# 🧁 Sweet Shop Management System
 
 A simple and modular **Sweet Shop Management System** built using **JavaScript** following **Test-Driven Development (TDD)** principles.
 
