@@ -21,30 +21,26 @@ This project allows you to manage sweets inventory with core functionalities lik
 
 ## 📁 Technologies Used
 
-- JavaScript (ES6+)
+- JavaScript
 - Jest (Unit Testing)
-- Node.js
-- (Optional) HTML + CSS + JS for frontend UI
+- HTML + CSS + JS for frontend UI
 
 ---
 
 ## 📦 Setup Instructions
 
 1. **Clone the repository**
-
    git clone https://github.com/your-username/sweet-shop-management-system.git
    cd sweet-shop-management-system
-Initialize the project
-
+   
+2. **Initialize the project**
 npm install
-Run the test suite
 
+4. **Run the test suite**
 npm test
+
 🧪 Test-Driven Development (TDD)
-This project follows TDD principles:
-
-Every feature is implemented only after writing the corresponding test.
-
-Tests are written using Jest and located in the /tests folder.
-
-Test coverage includes positive and negative scenarios.
+- This project follows TDD principles:
+- Every feature is implemented only after writing the corresponding test.
+- Tests are written using Jest and located in the /tests folder.
+- Test coverage includes positive and negative scenarios.
