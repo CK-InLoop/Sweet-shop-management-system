@@ -1,37 +1,50 @@
-# Sweet Shop Management System
+# 🍬 Sweet Shop Management System
 
-A modular inventory management system for a sweet shop, built with JavaScript and TDD using Jest.
+A simple and modular **Sweet Shop Management System** built using **JavaScript** following **Test-Driven Development (TDD)** principles.
 
-## Features
-- Add, delete, view sweets
-- Search and sort sweets
-- Purchase and restock inventory
-- Test-driven development (TDD) with Jest
-- (Optional) Minimal frontend for interaction
-
-## Getting Started
-
-### Install dependencies
-```
-npm install
-```
-
-### Run tests
-```
-npm test
-```
-
-## Project Structure
-```
-models/         # Sweet model
-services/       # Business logic
-controllers/    # (Optional) Controllers for UI/API
-tests/          # Jest tests
-```
-
-## Sample Data
-See `data/sampleSweets.js`.
+This project allows you to manage sweets inventory with core functionalities like adding, deleting, searching, sorting, purchasing, and restocking sweets. It includes unit tests written with **Jest** to ensure reliable and bug-free code.
 
 ---
 
-For any questions, open an issue or contact the maintainer.
+## 🔍 Features
+
+- ✅ Add new sweets (with ID, name, category, price, quantity)
+- ❌ Delete sweets
+- 📄 View all sweets
+- 🔍 Search sweets by name, category, or price range
+- ↕️ Sort sweets by name or price
+- 🛒 Purchase sweets (updates quantity)
+- 🔁 Restock sweets
+- 🧪 Test-Driven Development using Jest
+
+---
+
+## 📁 Technologies Used
+
+- JavaScript (ES6+)
+- Jest (Unit Testing)
+- Node.js
+- (Optional) HTML + CSS + JS for frontend UI
+
+---
+
+## 📦 Setup Instructions
+
+1. **Clone the repository**
+
+   git clone https://github.com/your-username/sweet-shop-management-system.git
+   cd sweet-shop-management-system
+Initialize the project
+
+npm install
+Run the test suite
+
+npm test
+🧪 Test-Driven Development (TDD)
+This project follows TDD principles:
+
+Every feature is implemented only after writing the corresponding test.
+
+Tests are written using Jest and located in the /tests folder.
+
+Test coverage includes positive and negative scenarios.
