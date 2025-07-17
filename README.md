@@ -49,3 +49,8 @@ This project allows you to manage sweets inventory with core functionalities lik
 ## To run the frontend:
    - Open frontend/index.html in your browser
    - Use the buttons to add, search, sort, delete, purchase, or restock sweets
+
+## Screenshots : 
+
+   - <img width="1918" height="758" alt="image" src="https://github.com/user-attachments/assets/1d138eae-da77-4abb-bac3-eef933523799" />
+
